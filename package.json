@@ -1,0 +1,34 @@
+{
+  "name": "rzzt-hut",
+  "author": {
+    "email": "samuel@rzzt.dev",
+    "name": "Samuel Henrique"
+  },
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "moleculer": "^0.14.19",
+    "moleculer-web": "^0.10.4",
+    "source-map-support": "^0.5.21"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node -r source-map-support/register dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "postinstall": "yarn build"
+  },
+  "volta": {
+    "node": "16.14.0"
+  },
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
